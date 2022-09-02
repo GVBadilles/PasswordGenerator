@@ -12,7 +12,7 @@
 
 <body>
 	<nav>
-		<a href="#" class="logo">
+		<a href="index.htm" class="logo">
 			<h1>
 				<span class="firstw">Password</span><span class="secondw"> Generator</span>
 			</h1>
@@ -23,7 +23,7 @@
 				<a href="#about" class="nav-link" id="nav-link">About</a>
 			</li>
 			<li class="nav-item">
-				<a href="#password" class="nav-link" id="nav-link">Generator</a>
+				<a href="#password-gen" class="nav-link" id="nav-link">Generator</a>
 			</li>
 			<li class="nav-item">
 				<a href="#sub" class="nav-link" id="nav-link">Subscribe</a>
@@ -75,7 +75,8 @@
 		</p>
 	</section>
 	
-	<div class="password-main">
+	<section class="password-gen" id="password-gen">
+		<div class="password-main">
 		<div class="password-generator">
 			<div class="password">
 				<p id="passwordBox"></p><i class="far fa-clipboard" onclick="copyPassword()"></i></i>
@@ -103,6 +104,7 @@
 			<button onclick="createPassword()">Get Random Password</button>
 		</div>
 	</div>
+	</section>
 	
 	<section class="sub" id="sub">
 		<h3> Subscribe for updates and promotions!</h3>
