@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Project - Random Password Generator In Javascript</title>
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.2/css/all.min.css">
+	<link rel="stylesheet" href="style.css">
+	<script src="script.js"></script>
+</head>
+
+<body>
+	<nav>
+		<a href="#" class="logo">
+			<h1>
+				<span class="firstw">Password</span><span class="secondw"> Generator</span>
+			</h1>
+		</a>
+	
+		<ul>
+			<li class="nav-item">
+				<a href="#about" class="nav-link" id="nav-link">About</a>
+			</li>
+			<li class="nav-item">
+				<a href="#password" class="nav-link" id="nav-link">Generator</a>
+			</li>
+			<li class="nav-item">
+				<a href="#sub" class="nav-link" id="nav-link">Subscribe</a>
+			</li>
+		</ul>
+	</nav>
+	
+	<section class="intro">
+		<div class="intro-text">
+			<h1>
+				<span class="talk">Get Secured</span><br />
+				<span class="stay">Stay Secured</span>
+			</h1>
+			<p>
+			A random password generator that will help you think of a strong password!<br />
+			Have the freedom on what your random password will comprise of!
+			</p>
+			<a class="btn red" href="#about">Learn More</a>
+			<a class="btn blue" href="#sub">Subscribe</a>
+		</div>
+		<div class="i-frame">
+			<iframe
+				width="5600"
+				height="315"
+				src="Introduction Video.mp4"
+				title="Introduction Video"
+				frameborder="10"
+				allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+			></iframe>
+        <div class="stand-1"></div>
+        <div class="stand-2"></div>
+		</div>
+	</section>
+	
+			
+	<section class="about" id="about">
+		<h3>Secure Yourself</h3>
+		<p>These possible passwords are secure enough to protect you from potential harm.</p>
+		<h3>Random as Random can be</h3>
+		<p>The generated passwords are fully randomized and can ensure a much protected account!</p>
+		<h3>Have your Password Ready</h3>
+		<p>
+		Having your own secure password have never been easy!<br />
+		Simply choose the password length with a minimum of 6<br />
+		and a maximum of 20 keys<br />
+		Click the Random Password button and voila!<br />
+		If you wish to copy the password, click the copy symbol next to the generated password<br />
+		Enjoy your very own secure and difficult to hack password!
+		</p>
+	</section>
+	
+	<div class="password-main">
+		<div class="password-generator">
+			<div class="password">
+				<p id="passwordBox"></p><i class="far fa-clipboard" onclick="copyPassword()"></i></i>
+		</div>
+		<div>
+			<label for="length">Length</label>
+			<input type="number" id="length" min="6" max="20" value="6">
+		</div>
+		<div>
+			<label for="symbol">Include Symbol</label>
+			<input type="checkbox" id="symbol" checked>
+		</div>
+		<div>
+			<label for="number">Include Number</label>
+			<input type="checkbox" id="number" checked>
+		</div>
+		<div>
+			<label for="lowerCase">Include lowerCase</label>
+			<input type="checkbox" id="lowerCase" checked>
+		</div>
+		<div>
+			<label for="upperCase">Include upperCase</label>
+			<input type="checkbox" id="upperCase" checked>
+		</div>
+			<button onclick="createPassword()">Get Random Password</button>
+		</div>
+	</div>
+	
+	<section class="sub" id="sub">
+		<h3> Subscribe for updates and promotions!</h3>
+		<form action="#">
+			<input type="email" name="email" id="email-sub" class="email-sub" required" />
+			<input type="submit" value="Subscribe" id="submit-btn" class="submit-btn" />
+		</form>
+	</section>
+	
+	<section class="socmed">
+		<h3>Connect with me in Social Media Sites</h3>
+		<div class="socmedicon">
+			<a href="https://www.facebook.com/GabrielVenz"><ion-icon name="logo-facebook"></ion-icon></a>
+			<a href="https://twitter.com/GABigaaaa"><ion-icon name="logo-twitter"></ion-icon></a>
+			<a href="https://www.instagram.com/gabbvenz/"><ion-icon name="logo-instagram"></ion-icon></a>
+		</div>
+	</section>
+	
+	<script
+      type="module"
+      src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"
+    ></script>
+</body>
+
+</html>

@@ -1,0 +1,276 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,400;0,900;1,700&display=swap");
+
+:root {
+	--normal-font: 400;
+	--bold-font: 600;
+	--bolder-font: 900;
+	--primary-color: #0f9fd4;
+	--secondary-color: #008f32;
+	--line-height: 1.7rem;
+	--transition: 0.4s ease-in;
+}
+
+html {
+	scroll-behavior: smooth;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  transition: var(--transition);
+}
+
+body {
+	font-family: "Roboto", sans-serif;
+}
+
+ul li {
+	list-style-type: none;
+}
+
+a {
+	text-decoration: none;
+	color: var(--primary-color);
+}
+
+a:hover {
+	color: var(--secondary-color);
+}
+
+.firstw {
+	color: var(--secondary-color);
+}
+
+.secondw {
+	color: var(--primary-color);
+}
+
+nav {
+  background: #fff;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem 1.5rem;
+  box-shadow: 2px 3px 2px #f1f1f1;
+  position: sticky;
+  top: 0;
+  left: 0;
+  z-index: 1;
+}
+
+ul {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+
+.nav-item {
+	margin-left: 2rem;
+}
+
+.nav-link {
+	font-weight: var(--bold-font);
+}
+
+.intro {
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	gap: 1.9rem;
+	max-width: 1100px;
+	margin: 2rem auto -6rem;
+}
+}
+
+.intro-text h1 {
+	font-size: 5rem;
+	margin-bottom: 5rem;
+}
+
+.intro p {
+	line-height: var(--line-height);
+}
+
+.talk {
+	color: var(--primary-color);
+}
+
+.stay {
+	color: var(--secondary-color);
+}
+
+.btn {
+	margin-top: 1rem;
+	display: inline-block;
+	padding: 0.8rem 0.6rem;
+	border: none;
+	font-size: 1.4rem;
+	border-radius: 5px;
+	color: #fff;
+}
+
+.red {
+	background-color: var(--secondary-color);
+	margin-right: 1.5rem;
+}
+
+.red:hover {
+	background-color: #f1262d;
+	color: white;
+}
+
+.blue {
+	background-color: var(--primary-color);
+}
+
+.blue:hover {
+	background-color: #095cf7;
+	color: white;
+}
+
+iframe {
+	max-width: 30rem;
+	border-top: 40px groove var(--primary-color);
+	border-bottom: 40px groove var(--primary-color);
+	border-right: 28px solid var(--secondary-color);
+	border-left: 28px solid var(--secondary-color);
+}
+
+.stand-1 {
+	height: 90px;
+	width: 6px;
+	background-color: var(--primary-color);
+	transform: rotate(40deg);
+	position: relative;
+	top: -16px;
+	left: 200px;
+}
+
+.stand-2 {
+	height: 90px;
+	width: 6px;
+	background-color: var(--secondary-color);
+	transform: rotate(-40deg);
+	position: relative;
+	top: -105px;
+	left: 255px;
+}
+
+.about {
+	position: relative;
+	background: white;
+	height: 600px;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	text-align: center;
+	flex-direction: column;
+	gap: 1.5rem;
+	margin: 5rem 0;
+}
+
+.about h3 {
+	color: var(--secondary-color);
+	font-size: 3em;
+	margin-bottom: -20px;
+	text-shadow: 2px 2px 2px #333;
+}
+
+.about p {
+	font-size: 1.5em;
+	text-shadow: 2px 2px 2px #333;
+}
+
+.password-main {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: white;
+  height: 100vh;
+}
+
+.password-generator {
+  padding: 40px;
+  background-color: #089c77;
+  color: white;
+  font-size: 20px;
+  font-family: sans-serif;
+}
+
+.password-generator div {
+  display: flex;
+  justify-content: space-between;
+  margin: 20px 0;
+}
+
+.password {
+  min-width: 280px;
+  background-color: #02523e;
+  color: rgb(199, 199, 199);
+}
+
+.password p {
+  padding: 6px 10px;
+}
+
+.password i {
+  background-color: rgba(0, 0, 0, 2);
+  padding: 6px 10px;
+}
+
+.password-generator button {
+  width: 100%;
+  border: none;
+  color: rgba(255, 255, 255, 2);
+  background-color: #014232;
+  padding: 10px;
+}
+
+.sub {
+	margin-top: 2rem;
+	text-align: center;
+}
+
+.sub h3{
+	text-align: center;
+}
+
+.form {
+	text-align: center;
+	margin: 0.4rem 2rem;
+}
+
+.email-sub {
+	padding: 0.2rem;
+	border: 1px solid var(--primary-color);
+	border-radius: 4px;
+}
+
+.email-sub:focus {
+	border: 1px solid var(--secondary-color);
+	outline: none;
+}
+
+.submit-btn {
+	background-color: var(--primary-color);
+	color: white;
+	padding: 0.3rem;
+	margin: 0 0.5rem;
+	border: none;
+	border-radius: 2px;
+	cursor: pointer;
+}
+
+.submit-btn:hover {
+	background-color: #095cf7;
+}
+
+.socmed {
+	text-align: center;
+	margin: 2rem;
+}
+
+.socmedicon {
+	font-size: 1.3rem;
+}
