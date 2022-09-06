@@ -3,7 +3,7 @@
 	
 	$bind = new mysqli('localhost', 'root', '', 'order');
 	if ($bind -> connection_error) {
-		echo9 "$conn -> connection_error";
+		echo "$conn -> connection_error";
 		die ("Connection Faield : " $bind -> connection_error);
 	} else {
 		$stmt = $conn -> prepare("insert into registration(email-sub) values (?, )");
